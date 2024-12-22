@@ -45,7 +45,7 @@ add_action('init', 'idc_register_blocks');
 function idc_enqueue_block_assets()
 {
     wp_enqueue_script(
-        'multi-block-editor-js',
+        'idc-block-editor-js',
         plugin_dir_url(__FILE__) . 'build/idc-block-editor.js',
         array('wp-blocks', 'wp-components', 'wp-data', 'wp-dom-ready', 'wp-edit-post', 'wp-element', 'wp-i18n', 'wp-plugins'),
         null,
@@ -60,7 +60,7 @@ add_action('enqueue_block_editor_assets', 'idc_enqueue_block_assets');
 function idc_enqueue_admin_assets()
 {
     wp_enqueue_script(
-        'multi-block-admin-js',
+        'idc-block-admin-js',
         plugin_dir_url(__FILE__) . 'build/idc-block-admin.js',
         array(),
         null,
@@ -75,7 +75,7 @@ add_action('admin_enqueue_scripts', 'idc_enqueue_admin_assets');
 function idc_enqueue_frontend_assets()
 {
     wp_enqueue_script(
-        'multi-block-frontend-js',
+        'idc-block-frontend-js',
         plugin_dir_url(__FILE__) . 'build/idc-block-frontend.js',
         array(),
         null,
