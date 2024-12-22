@@ -14,16 +14,15 @@
 		"plugin-zip": "wp-scripts plugin-zip",
 		"start": "wp-scripts start --webpack-copy-php",
 		"build-blocks-manifest": "wp-scripts build-blocks-manifest",
-		"postbuild": "npm run build-blocks-manifest"
+		"postbuild": "npm run build-blocks-manifest",
+		"prepare": "husky"
 	},
 	"devDependencies": {
 		"@wordpress/blocks": "^13.10.0",
 		"@wordpress/dom-ready": "^4.14.0",
 		"@wordpress/scripts": "^30.7.0",
+		"husky": "^9.1.7",
 		"webpack": "^5.97.1",
 		"webpack-cli": "^6.0.1"
-	},
-	"dependencies": {
-		"@wordpress/env": "^10.14.0"
 	}
 }
