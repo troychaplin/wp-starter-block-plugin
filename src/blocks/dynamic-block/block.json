@@ -4,7 +4,7 @@
 	"name": "starter-block/dynamic-block",
 	"version": "0.1.0",
 	"title": "Dynamic Block",
-	"category": "text",
+	"category": "custom-category-1",
 	"icon": "smiley",
 	"description": "Example block scaffolded with Create Block tool.",
 	"example": {},
