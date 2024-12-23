@@ -16,12 +16,8 @@ return array(
 		'supports' => array(
 			'html' => false
 		),
-		'textdomain' => 'wp-starter-blocks',
-		'editorScript' => 'file:./index.js',
-		'editorStyle' => 'file:./index.css',
-		'style' => 'file:./style-index.css',
 		'render' => 'file:./render.php',
-		'viewScript' => 'file:./view.js'
+		'textdomain' => 'wp-starter-blocks'
 	),
 	'static-block' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
@@ -38,11 +34,7 @@ return array(
 		'supports' => array(
 			'html' => false
 		),
-		'textdomain' => 'wp-starter-blocks',
-		'editorScript' => 'file:./index.js',
-		'editorStyle' => 'file:./index.css',
-		'style' => 'file:./style-index.css',
 		'render' => 'file:./render.php',
-		'viewScript' => 'file:./view.js'
+		'textdomain' => 'wp-starter-blocks'
 	)
 );
