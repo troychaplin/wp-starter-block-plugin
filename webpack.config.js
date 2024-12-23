@@ -5,14 +5,14 @@ module.exports = {
 	...defaultConfig,
 	entry: {
 		...defaultConfig.entry(),
-		'multi-block-editor': [
-			path.resolve( __dirname, 'src/scripts/multi-block-editor.js' ),
+		'idc-block-editor': [
+			path.resolve( __dirname, 'src/scripts/idc-block-editor.js' ),
 		],
-		'multi-block-admin': [
-			path.resolve( __dirname, 'src/scripts/multi-block-admin.js' ),
+		'idc-block-admin': [
+			path.resolve( __dirname, 'src/scripts/idc-block-admin.js' ),
 		],
-		'multi-block-frontend': [
-			path.resolve( __dirname, 'src/scripts/multi-block-frontend.js' ),
+		'idc-block-frontend': [
+			path.resolve( __dirname, 'src/scripts/idc-block-frontend.js' ),
 		],
 	},
 };
