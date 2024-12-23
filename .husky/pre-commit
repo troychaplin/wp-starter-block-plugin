@@ -3,7 +3,6 @@
 
 # Run the format command
 npm run format
-npm run lint:js
 
 # Check if there are any changes in the working directory
 if [ -n "$(git status --porcelain)" ]; then
@@ -16,4 +15,5 @@ if [ -n "$(git status --porcelain)" ]; then
 fi
 
 # If no changes, continue with the other tasks
+npm run lint:js
 npm run build
