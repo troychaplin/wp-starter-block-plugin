@@ -18,6 +18,8 @@
 		"prepare": "husky"
 	},
 	"devDependencies": {
+		"@commitlint/cli": "^19.6.1",
+		"@commitlint/config-conventional": "^19.6.0",
 		"@wordpress/blocks": "^13.10.0",
 		"@wordpress/dom-ready": "^4.14.0",
 		"@wordpress/scripts": "^30.7.0",
