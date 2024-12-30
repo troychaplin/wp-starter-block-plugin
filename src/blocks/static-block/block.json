@@ -4,7 +4,7 @@
 	"name": "starter-block/static-block",
 	"version": "0.1.0",
 	"title": "Static Block",
-	"category": "custom-category-2",
+	"category": "listings",
 	"icon": "smiley",
 	"description": "Example block scaffolded with Create Block tool.",
 	"example": {},

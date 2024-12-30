@@ -10,7 +10,7 @@ class AllowedBlocks
 {
   public function __construct()
   {
-    // add_action('allowed_block_types_all', [$this, 'set_allowed_blocks']);
+    add_action('allowed_block_types_all', [$this, 'set_allowed_blocks']);
   }
 
   public function set_allowed_blocks($allowed_blocks)
