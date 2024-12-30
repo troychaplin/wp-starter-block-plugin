@@ -4,7 +4,7 @@
 	"description": "A custom block plugin for International Documents Canada",
 	"author": "Troy Chaplin",
 	"license": "GPL-2.0-or-later",
-	"main": "build/index.js",
+	"main": "build/idc-block-editor.js",
 	"scripts": {
 		"build": "wp-scripts build --webpack-copy-php",
 		"format": "wp-scripts format",
