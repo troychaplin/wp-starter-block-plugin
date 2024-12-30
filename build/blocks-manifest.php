@@ -4,7 +4,7 @@ return array(
 	'dynamic-block' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
-		'name' => 'starter-block/dynamic-block',
+		'name' => 'idc-block/dynamic-block',
 		'version' => '0.1.0',
 		'title' => 'Dynamic Block',
 		'category' => 'listings',
@@ -22,7 +22,7 @@ return array(
 	'static-block' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
-		'name' => 'starter-block/static-block',
+		'name' => 'idc-block/static-block',
 		'version' => '0.1.0',
 		'title' => 'Static Block',
 		'category' => 'listings',
