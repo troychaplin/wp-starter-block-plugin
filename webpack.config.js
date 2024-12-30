@@ -4,7 +4,7 @@ const path = require( 'path' );
 module.exports = {
 	...defaultConfig,
 	entry: {
-		...defaultConfig.entry(),
+		// ...defaultConfig.entry(),
 		'idc-block-editor': [
 			path.resolve( __dirname, 'src/scripts/idc-block-editor.js' ),
 		],

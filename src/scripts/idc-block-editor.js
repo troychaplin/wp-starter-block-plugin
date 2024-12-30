@@ -1,5 +1,5 @@
-import '../blocks/dynamic-block/';
-import '../blocks/static-block/';
+import '../blocks/dynamic-block';
+import '../blocks/static-block';
 
 // console.log( 'block editor scripts test' );
 
