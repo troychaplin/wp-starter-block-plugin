@@ -15,5 +15,4 @@ if [ -n "$(git status --porcelain)" ]; then
 fi
 
 # If no changes, continue with the other tasks
-npm run lint:js
-npm run build
+npm run lint:js && npm run build
