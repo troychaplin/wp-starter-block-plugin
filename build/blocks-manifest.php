@@ -7,7 +7,7 @@ return array(
 		'name' => 'starter-block/dynamic-block',
 		'version' => '0.1.0',
 		'title' => 'Dynamic Block',
-		'category' => 'text',
+		'category' => 'listings',
 		'icon' => 'smiley',
 		'description' => 'Example block scaffolded with Create Block tool.',
 		'example' => array(
@@ -25,7 +25,7 @@ return array(
 		'name' => 'starter-block/static-block',
 		'version' => '0.1.0',
 		'title' => 'Static Block',
-		'category' => 'text',
+		'category' => 'listings',
 		'icon' => 'smiley',
 		'description' => 'Example block scaffolded with Create Block tool.',
 		'example' => array(

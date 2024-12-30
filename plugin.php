@@ -20,6 +20,7 @@ if (! defined('ABSPATH')) {
 
 // Include function files
 require_once plugin_dir_path(__FILE__) . 'Functions/allowed-blocks.php';
+require_once plugin_dir_path(__FILE__) . 'Functions/block-categories.php';
 require_once plugin_dir_path(__FILE__) . 'Functions/customizations.php';
 require_once plugin_dir_path(__FILE__) . 'Functions/enqueue-scripts.php';
 require_once plugin_dir_path(__FILE__) . 'Functions/register-blocks.php';
@@ -27,6 +28,7 @@ require_once plugin_dir_path(__FILE__) . 'Functions/remove-options.php';
 
 // Instantiate the classes
 new IDC\Blocks\AllowedBlocks();
+new IDC\Blocks\BlockCategories();
 new IDC\Blocks\Customizations();
 new IDC\Blocks\RegisterBlocks();
 new IDC\Blocks\EnqueueScripts();
