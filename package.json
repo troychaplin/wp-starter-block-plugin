@@ -15,6 +15,7 @@
 		"start": "wp-scripts start --webpack-copy-php",
 		"build-blocks-manifest": "wp-scripts build-blocks-manifest",
 		"postbuild": "npm run build-blocks-manifest",
+		"clean": "rm -rf node_modules ; rm package-lock.json ; npm install",
 		"prepare": "husky"
 	},
 	"devDependencies": {
