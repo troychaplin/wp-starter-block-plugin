@@ -1,6 +1,6 @@
 <?php
 
-namespace IDC\Blocks;
+namespace IDC;
 
 if (! defined('ABSPATH')) {
   exit; // Exit if accessed directly.
@@ -14,12 +14,12 @@ class CoreBlocks
   }
 
   public function modify_core_heading_levels($args, $block_type)
-    {
-        if ('core/heading' !== $block_type) {
-            return $args;
-        }
-        $args['attributes']['levelOptions']['default'] = [2, 3, 4, 5, 6];
-
-        return $args;
+  {
+    if ('core/heading' !== $block_type) {
+      return $args;
     }
+    $args['attributes']['levelOptions']['default'] = [2, 3, 4, 5, 6];
+
+    return $args;
+  }
 }

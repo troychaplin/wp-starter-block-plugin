@@ -1,20 +1,20 @@
 <?php
 
-namespace IDC\Blocks;
+namespace IDC;
 
 if (! defined('ABSPATH')) {
   exit; // Exit if accessed directly.
 }
 
-class Customizations
+class Customization
 {
   public function __construct()
   {
     add_filter('xmlrpc_enabled', '__return_false');
     add_filter('register_block_type_args', [$this, 'set_allowed_heading_levels'], 10, 2);
     add_action('init', [$this, 'add_page_excerpts']);
-    add_action('init', [$this, 'clean_up_wp_head'] );
-    add_action('init', [$this, 'disable_emojis'] );
+    add_action('init', [$this, 'clean_up_wp_head']);
+    add_action('init', [$this, 'disable_emojis']);
   }
 
   /**
@@ -60,7 +60,8 @@ class Customizations
    *
    * @return void
    */
-  public function clean_up_wp_head() {
+  public function clean_up_wp_head()
+  {
     remove_action('wp_head', 'rsd_link');
     remove_action('wp_head', 'wlwmanifest_link');
     remove_action('wp_head', 'wp_generator');
@@ -78,7 +79,8 @@ class Customizations
    *
    * @return void
    */
-  public function disable_emojis() {
+  public function disable_emojis()
+  {
     remove_action('wp_head', 'print_emoji_detection_script', 7);
     remove_action('wp_print_styles', 'print_emoji_styles');
     remove_action('admin_print_scripts', 'print_emoji_detection_script');
