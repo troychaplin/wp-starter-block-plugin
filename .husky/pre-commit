@@ -1,9 +1,6 @@
 #!/bin/sh
 # . "$(dirname "$0")/_/husky.sh"
 
-# Remove the build directory
-rm -rf build
-
 # Run the format command
 npm run format
 
