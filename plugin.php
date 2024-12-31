@@ -18,20 +18,20 @@ if (! defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }
 
-// Include function files
-require_once plugin_dir_path(__FILE__) . 'Functions/allowed-blocks.php';
-require_once plugin_dir_path(__FILE__) . 'Functions/block-categories.php';
-require_once plugin_dir_path(__FILE__) . 'Functions/core-blocks.php';
-require_once plugin_dir_path(__FILE__) . 'Functions/customizations.php';
-require_once plugin_dir_path(__FILE__) . 'Functions/enqueue-scripts.php';
-require_once plugin_dir_path(__FILE__) . 'Functions/register-blocks.php';
-require_once plugin_dir_path(__FILE__) . 'Functions/remove-options.php';
+// Include Composer's autoload file
+require_once plugin_dir_path(__FILE__) . 'vendor/autoload.php';
 
 // Instantiate the classes
-new IDC\Blocks\AllowedBlocks();
-new IDC\Blocks\BlockCategories();
-new IDC\Blocks\CoreBlocks();
-new IDC\Blocks\Customizations();
-new IDC\Blocks\EnqueueScripts();
-new IDC\Blocks\RegisterBlocks();
-new IDC\Blocks\RemoveOptions();
+$classes = [
+    \IDC\AllowedBlocks::class,
+    \IDC\BlockCategories::class,
+    \IDC\CoreBlocks::class,
+    \IDC\Customization::class,
+    \IDC\EnqueueScripts::class,
+    \IDC\RegisterBlocks::class,
+    \IDC\RemoveOptions::class,
+];
+
+foreach ($classes as $class) {
+    new $class();
+}

@@ -1,6 +1,6 @@
 <?php
 
-namespace IDC\Blocks;
+namespace IDC;
 
 if (! defined('ABSPATH')) {
   exit; // Exit if accessed directly.
@@ -38,7 +38,7 @@ class EnqueueScripts
       'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap',
       [],
       null
-  );
+    );
   }
 
   /**
