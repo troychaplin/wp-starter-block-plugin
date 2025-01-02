@@ -1,14 +1,28 @@
 import { useBlockProps, InspectorControls } from '@wordpress/block-editor';
-import { PanelBody, TextControl, TextareaControl } from '@wordpress/components';
+import {
+	PanelBody,
+	TextControl,
+	TextareaControl,
+	RangeControl,
+} from '@wordpress/components';
 import { LeadIn, Section } from '@troychaplin79/idc-frontend-ui';
 
 export default function Edit( { attributes, setAttributes } ) {
-	const { topText, bottomText, asideText } = attributes;
+	const { maxWidth, topText, bottomText, asideText } = attributes;
 
 	return (
 		<>
 			<InspectorControls>
 				<PanelBody title="Display Options">
+					<RangeControl
+						initialPosition={ maxWidth }
+						label="Max Width"
+						max={ 7 }
+						min={ 4 }
+						onChange={ ( value ) =>
+							setAttributes( { maxWidth: value } )
+						}
+					/>
 					<TextControl
 						label="Top heading"
 						placeholder="Add a line of text as the top header."
@@ -40,10 +54,10 @@ export default function Edit( { attributes, setAttributes } ) {
 
 			<div
 				{ ...useBlockProps( {
-					className: `idc-block`,
+					className: `idc-block idc-block-${ maxWidth }xl`,
 				} ) }
 			>
-				<Section maxWidth="6xl">
+				<Section maxWidth={ `${ maxWidth }xl` }>
 					<LeadIn
 						headerTop={ topText }
 						headerBottom={ bottomText }

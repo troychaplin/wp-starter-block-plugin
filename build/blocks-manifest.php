@@ -18,12 +18,13 @@ return array(
 		),
 		'render' => 'file:./render.php',
 		'supports' => array(
-			'html' => false,
-			'align' => array(
-				'wide'
-			)
+			'html' => false
 		),
 		'attributes' => array(
+			'maxWidth' => array(
+				'type' => 'number',
+				'default' => 5
+			),
 			'topText' => array(
 				'type' => 'string',
 				'default' => 'Our Process'

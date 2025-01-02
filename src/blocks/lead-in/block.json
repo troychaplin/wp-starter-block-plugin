@@ -8,10 +8,13 @@
   "keywords": ["announcement", "focus", "highlight", "informational", "lead-in", "spotlight"],
   "render": "file:./render.php",
   "supports": {
-    "html": false,
-    "align": ["wide"]
+    "html": false
   },
   "attributes": {
+    "maxWidth": {
+      "type": "number",
+      "default": 5
+    },
     "topText": {
       "type": "string",
       "default": "Our Process"
