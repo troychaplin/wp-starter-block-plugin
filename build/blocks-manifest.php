@@ -25,6 +25,10 @@ return array(
 				'type' => 'number',
 				'default' => 5
 			),
+			'bgType' => array(
+				'type' => 'string',
+				'default' => 'none'
+			),
 			'topText' => array(
 				'type' => 'string',
 				'default' => 'Our Process'

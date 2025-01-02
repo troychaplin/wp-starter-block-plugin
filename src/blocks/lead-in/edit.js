@@ -1,14 +1,15 @@
 import { useBlockProps, InspectorControls } from '@wordpress/block-editor';
 import {
 	PanelBody,
+	RangeControl,
+	SelectControl,
 	TextControl,
 	TextareaControl,
-	RangeControl,
 } from '@wordpress/components';
 import { LeadIn, Section } from '@troychaplin79/idc-frontend-ui';
 
 export default function Edit( { attributes, setAttributes } ) {
-	const { maxWidth, topText, bottomText, asideText } = attributes;
+	const { maxWidth, bgType, topText, bottomText, asideText } = attributes;
 
 	return (
 		<>
@@ -23,6 +24,22 @@ export default function Edit( { attributes, setAttributes } ) {
 							setAttributes( { maxWidth: value } )
 						}
 					/>
+					<SelectControl
+						label="Background Type"
+						onChange={ ( value ) =>
+							setAttributes( { bgType: value } )
+						}
+						options={ [
+							{ label: 'None', value: 'none' },
+							{ label: 'White', value: 'white' },
+							{ label: 'Blue', value: 'blue' },
+							{ label: 'Gradient', value: 'gradient' },
+							{ label: 'Edge', value: 'edge' },
+						] }
+						value={ bgType }
+					/>
+				</PanelBody>
+				<PanelBody title="Content Options">
 					<TextControl
 						label="Top heading"
 						placeholder="Add a line of text as the top header."
@@ -57,7 +74,10 @@ export default function Edit( { attributes, setAttributes } ) {
 					className: `idc-block idc-block-${ maxWidth }xl`,
 				} ) }
 			>
-				<Section maxWidth={ `${ maxWidth }xl` }>
+				<Section
+					maxWidth={ `${ maxWidth }xl` }
+					bgType={ bgType !== 'none' ? bgType : null }
+				>
 					<LeadIn
 						headerTop={ topText }
 						headerBottom={ bottomText }

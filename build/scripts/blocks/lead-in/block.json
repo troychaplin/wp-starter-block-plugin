@@ -22,6 +22,10 @@
       "type": "number",
       "default": 5
     },
+    "bgType": {
+      "type": "string",
+      "default": "none"
+    },
     "topText": {
       "type": "string",
       "default": "Our Process"
