@@ -15,17 +15,23 @@
   ],
   "render": "file:./render.php",
   "supports": {
-    "html": false
+    "html": false,
+    "align": [
+      "wide"
+    ]
   },
   "attributes": {
     "topText": {
-      "type": "string"
+      "type": "string",
+      "default": "Our Process"
     },
     "bottomText": {
-      "type": "string"
+      "type": "string",
+      "default": "As simple as A-B-C"
     },
     "asideText": {
-      "type": "string"
+      "type": "string",
+      "default": "We take the anxiety and uncertainty out of the document apostille process in these three simple steps!"
     }
   }
 }

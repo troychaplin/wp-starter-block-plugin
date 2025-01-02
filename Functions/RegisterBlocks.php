@@ -34,7 +34,7 @@ class RegisterBlocks
       );
     }
 
-    $blocks = glob(__DIR__  . '/../build/blocks/*', GLOB_ONLYDIR);
+    $blocks = glob(__DIR__  . '/../build/scripts/blocks/*', GLOB_ONLYDIR);
 
     foreach ($blocks as $block) {
       register_block_type($block);

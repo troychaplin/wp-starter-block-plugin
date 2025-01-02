@@ -26,7 +26,7 @@ class EnqueueScripts
   {
     wp_enqueue_script(
       'idc-block-editor-js',
-      plugin_dir_url(__FILE__) . '../build/idc-block-editor.js',
+      plugin_dir_url(__FILE__) . '../build/scripts/idc-block-editor.js',
       array('wp-blocks', 'wp-components', 'wp-data', 'wp-dom-ready', 'wp-edit-post', 'wp-element', 'wp-i18n', 'wp-plugins'),
       null,
       false
@@ -34,7 +34,7 @@ class EnqueueScripts
 
     wp_enqueue_style(
       'idc-blocks-styles',
-      plugin_dir_url(__FILE__) . '../build/idc-blocks.css',
+      plugin_dir_url(__FILE__) . '../build/styles/idc-blocks.css',
       [],
       false
     );
@@ -60,7 +60,7 @@ class EnqueueScripts
   {
     wp_enqueue_script(
       'idc-block-admin-js',
-      plugin_dir_url(__FILE__) . '../build/idc-block-admin.js',
+      plugin_dir_url(__FILE__) . '../build/scripts/idc-block-admin.js',
       array(),
       null,
       true

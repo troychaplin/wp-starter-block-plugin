@@ -18,17 +18,23 @@ return array(
 		),
 		'render' => 'file:./render.php',
 		'supports' => array(
-			'html' => false
+			'html' => false,
+			'align' => array(
+				'wide'
+			)
 		),
 		'attributes' => array(
 			'topText' => array(
-				'type' => 'string'
+				'type' => 'string',
+				'default' => 'Our Process'
 			),
 			'bottomText' => array(
-				'type' => 'string'
+				'type' => 'string',
+				'default' => 'As simple as A-B-C'
 			),
 			'asideText' => array(
-				'type' => 'string'
+				'type' => 'string',
+				'default' => 'We take the anxiety and uncertainty out of the document apostille process in these three simple steps!'
 			)
 		)
 	)
