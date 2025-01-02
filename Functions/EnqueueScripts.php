@@ -33,6 +33,13 @@ class EnqueueScripts
     );
 
     wp_enqueue_style(
+      'idc-blocks-styles',
+      plugin_dir_url(__FILE__) . '../build/idc-blocks.css',
+      [],
+      false
+    );
+
+    wp_enqueue_style(
       'google-fonts-editor',
       'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap',
       [],

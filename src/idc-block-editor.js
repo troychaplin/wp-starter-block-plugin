@@ -1,4 +1,4 @@
-import '../blocks/lead-in';
+import './blocks/lead-in';
 
 // console.log( 'block editor scripts test' );
 

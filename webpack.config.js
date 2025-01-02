@@ -5,10 +5,10 @@ module.exports = {
 	...defaultConfig,
 	entry: {
 		'idc-block-editor': [
-			path.resolve( __dirname, 'src/scripts/idc-block-editor.js' ),
+			path.resolve( __dirname, 'src/idc-block-editor.js' ),
 		],
 		'idc-block-admin': [
-			path.resolve( __dirname, 'src/scripts/idc-block-admin.js' ),
+			path.resolve( __dirname, 'src/idc-block-admin.js' ),
 		],
 	},
 };
