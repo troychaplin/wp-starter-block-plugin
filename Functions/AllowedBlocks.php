@@ -32,8 +32,7 @@ class AllowedBlocks
 
     // Allowed custom blocks
     $custom_blocks = [
-      'idc-block/static-block',
-      'idc-block/dynamic-block',
+      'idc-block/lead-in',
     ];
 
     // Allowed blocks added by plugins

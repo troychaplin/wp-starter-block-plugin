@@ -1,0 +1,38 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "idc-block/lead-in",
+  "title": "Lead-In",
+  "description": "A block that highlights important information.",
+  "category": "text",
+  "keywords": [
+    "announcement",
+    "focus",
+    "highlight",
+    "informational",
+    "lead-in",
+    "spotlight"
+  ],
+  "render": "file:./render.php",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "maxWidth": {
+      "type": "number",
+      "default": 5
+    },
+    "topText": {
+      "type": "string",
+      "default": "Our Process"
+    },
+    "bottomText": {
+      "type": "string",
+      "default": "As simple as A-B-C"
+    },
+    "asideText": {
+      "type": "string",
+      "default": "We take the anxiety and uncertainty out of the document apostille process in these three simple steps!"
+    }
+  }
+}
