@@ -1,5 +1,4 @@
-import '../blocks/dynamic-block';
-import '../blocks/static-block';
+import '../blocks/lead-in';
 
 // console.log( 'block editor scripts test' );
 

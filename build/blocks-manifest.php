@@ -1,40 +1,35 @@
 <?php
 // This file is generated. Do not modify it manually.
 return array(
-	'dynamic-block' => array(
+	'lead-in' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
-		'name' => 'idc-block/dynamic-block',
-		'version' => '0.1.0',
-		'title' => 'Dynamic Block',
-		'category' => 'listings',
-		'icon' => 'smiley',
-		'description' => 'Example block scaffolded with Create Block tool.',
-		'example' => array(
-			
+		'name' => 'idc-block/lead-in',
+		'title' => 'Lead-In',
+		'description' => 'A block that highlights important information.',
+		'category' => 'text',
+		'keywords' => array(
+			'announcement',
+			'focus',
+			'highlight',
+			'informational',
+			'lead-in',
+			'spotlight'
 		),
+		'render' => 'file:./render.php',
 		'supports' => array(
 			'html' => false
 		),
-		'render' => 'file:./render.php',
-		'textdomain' => 'wp-starter-blocks'
-	),
-	'static-block' => array(
-		'$schema' => 'https://schemas.wp.org/trunk/block.json',
-		'apiVersion' => 3,
-		'name' => 'idc-block/static-block',
-		'version' => '0.1.0',
-		'title' => 'Static Block',
-		'category' => 'listings',
-		'icon' => 'smiley',
-		'description' => 'Example block scaffolded with Create Block tool.',
-		'example' => array(
-			
-		),
-		'supports' => array(
-			'html' => false
-		),
-		'render' => 'file:./render.php',
-		'textdomain' => 'wp-starter-blocks'
+		'attributes' => array(
+			'topText' => array(
+				'type' => 'string'
+			),
+			'bottomText' => array(
+				'type' => 'string'
+			),
+			'asideText' => array(
+				'type' => 'string'
+			)
+		)
 	)
 );
