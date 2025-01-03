@@ -32,6 +32,7 @@ class AllowedBlocks
 
     // Allowed custom blocks
     $custom_blocks = [
+      'idc-block/blue-panel',
       'idc-block/lead-in',
     ];
 
