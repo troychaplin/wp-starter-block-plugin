@@ -1,11 +1,9 @@
-import { useBlockProps, InspectorControls } from '@wordpress/block-editor';
 import {
-	PanelBody,
-	RangeControl,
-	SelectControl,
-	TextControl,
-	TextareaControl,
-} from '@wordpress/components';
+	useBlockProps,
+	InspectorControls,
+	PlainText,
+} from '@wordpress/block-editor';
+import { PanelBody, RangeControl, SelectControl } from '@wordpress/components';
 import { LeadIn, Section } from '@troychaplin79/idc-frontend-ui';
 
 export default function Edit( { attributes, setAttributes } ) {
@@ -39,34 +37,6 @@ export default function Edit( { attributes, setAttributes } ) {
 						value={ bgType }
 					/>
 				</PanelBody>
-				<PanelBody title="Content Options">
-					<TextControl
-						label="Top heading"
-						placeholder="Add a line of text as the top header."
-						onChange={ ( value ) =>
-							setAttributes( { topText: value } )
-						}
-						type="text"
-						value={ topText }
-					/>
-					<TextControl
-						label="Bottom heading"
-						placeholder="Add a line of text as the bottom header."
-						onChange={ ( value ) =>
-							setAttributes( { bottomText: value } )
-						}
-						type="text"
-						value={ bottomText }
-					/>
-					<TextareaControl
-						label="Side content"
-						placeholder="Add a short piece of descriptive text."
-						onChange={ ( value ) =>
-							setAttributes( { asideText: value } )
-						}
-						value={ asideText }
-					/>
-				</PanelBody>
 			</InspectorControls>
 
 			<div
@@ -79,9 +49,60 @@ export default function Edit( { attributes, setAttributes } ) {
 					bgType={ bgType !== 'none' ? bgType : null }
 				>
 					<LeadIn
-						headerTop={ topText }
-						headerBottom={ bottomText }
-						text={ asideText }
+						headerTop={
+							<PlainText
+								placeholder="Add a top title"
+								className="block text-base italic not-prose md:text-lg text-idc-black-500"
+								style={ {
+									border: 'none',
+									padding: '0',
+									backgroundColor: 'transparent',
+									resize: 'none',
+								} }
+								onChange={ ( value ) =>
+									setAttributes( { topText: value } )
+								}
+								value={ topText }
+								allowedFormats={ [] }
+								disableLineBreaks={ true }
+							/>
+						}
+						headerBottom={
+							<PlainText
+								placeholder="Add a bottom title"
+								className="block text-2xl italic font-medium not-prose md:text-3xl text-idc-orange-600"
+								style={ {
+									border: 'none',
+									padding: '0',
+									backgroundColor: 'transparent',
+									resize: 'none',
+								} }
+								onChange={ ( value ) =>
+									setAttributes( { bottomText: value } )
+								}
+								value={ bottomText }
+								allowedFormats={ [] }
+								disableLineBreaks={ true }
+							/>
+						}
+						text={
+							<PlainText
+								placeholder="Add some descriptive text"
+								className="text-base md:text-lg"
+								style={ {
+									border: 'none',
+									padding: '0',
+									backgroundColor: 'transparent',
+									resize: 'none',
+								} }
+								onChange={ ( value ) =>
+									setAttributes( { asideText: value } )
+								}
+								value={ asideText }
+								allowedFormats={ [] }
+								disableLineBreaks={ true }
+							/>
+						}
 					/>
 				</Section>
 			</div>
