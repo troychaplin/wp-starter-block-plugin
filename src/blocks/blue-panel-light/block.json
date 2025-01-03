@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "idc-block/blue-panel-light",
+  "title": "Blue Panel: Light",
+  "description": "An innerblock for blue panel with a light blue background.",
+  "category": "text",
+  "keywords": ["form"],
+  "parent": ["idc-block/blue-panel"],
+  "render": "file:./render.php",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "heading": {
+      "type": "string"
+    }
+  }
+}

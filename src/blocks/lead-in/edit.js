@@ -1,14 +1,13 @@
-import { useBlockProps, InspectorControls } from '@wordpress/block-editor';
 import {
-	PanelBody,
-	TextControl,
-	TextareaControl,
-	RangeControl,
-} from '@wordpress/components';
+	useBlockProps,
+	InspectorControls,
+	PlainText,
+} from '@wordpress/block-editor';
+import { PanelBody, RangeControl, SelectControl } from '@wordpress/components';
 import { LeadIn, Section } from '@troychaplin79/idc-frontend-ui';
 
 export default function Edit( { attributes, setAttributes } ) {
-	const { maxWidth, topText, bottomText, asideText } = attributes;
+	const { maxWidth, bgType, topText, bottomText, asideText } = attributes;
 
 	return (
 		<>
@@ -23,31 +22,18 @@ export default function Edit( { attributes, setAttributes } ) {
 							setAttributes( { maxWidth: value } )
 						}
 					/>
-					<TextControl
-						label="Top heading"
-						placeholder="Add a line of text as the top header."
+					<SelectControl
+						label="Background Type"
 						onChange={ ( value ) =>
-							setAttributes( { topText: value } )
+							setAttributes( { bgType: value } )
 						}
-						type="text"
-						value={ topText }
-					/>
-					<TextControl
-						label="Bottom heading"
-						placeholder="Add a line of text as the bottom header."
-						onChange={ ( value ) =>
-							setAttributes( { bottomText: value } )
-						}
-						type="text"
-						value={ bottomText }
-					/>
-					<TextareaControl
-						label="Side content"
-						placeholder="Add a short piece of descriptive text."
-						onChange={ ( value ) =>
-							setAttributes( { asideText: value } )
-						}
-						value={ asideText }
+						options={ [
+							{ label: 'White', value: 'white' },
+							{ label: 'Blue', value: 'blue' },
+							{ label: 'Gradient', value: 'gradient' },
+							{ label: 'Edge', value: 'edge' },
+						] }
+						value={ bgType }
 					/>
 				</PanelBody>
 			</InspectorControls>
@@ -57,11 +43,65 @@ export default function Edit( { attributes, setAttributes } ) {
 					className: `idc-block idc-block-${ maxWidth }xl`,
 				} ) }
 			>
-				<Section maxWidth={ `${ maxWidth }xl` }>
+				<Section
+					maxWidth={ `${ maxWidth }xl` }
+					bgType={ bgType !== 'none' ? bgType : null }
+				>
 					<LeadIn
-						headerTop={ topText }
-						headerBottom={ bottomText }
-						text={ asideText }
+						headerTop={
+							<PlainText
+								placeholder="Add a top title"
+								className="block text-base italic not-prose md:text-lg text-idc-black-500"
+								style={ {
+									border: 'none',
+									padding: '0',
+									backgroundColor: 'transparent',
+									resize: 'none',
+								} }
+								onChange={ ( value ) =>
+									setAttributes( { topText: value } )
+								}
+								value={ topText }
+								allowedFormats={ [] }
+								disableLineBreaks={ true }
+							/>
+						}
+						headerBottom={
+							<PlainText
+								placeholder="Add a bottom title"
+								className="block text-2xl italic font-medium not-prose md:text-3xl text-idc-orange-600"
+								style={ {
+									border: 'none',
+									padding: '0',
+									backgroundColor: 'transparent',
+									resize: 'none',
+								} }
+								onChange={ ( value ) =>
+									setAttributes( { bottomText: value } )
+								}
+								value={ bottomText }
+								allowedFormats={ [] }
+								disableLineBreaks={ true }
+							/>
+						}
+						text={
+							<PlainText
+								placeholder="Add some descriptive text"
+								className="text-base md:text-lg"
+								style={ {
+									border: 'none',
+									padding: '0',
+									backgroundColor: 'transparent',
+									resize: 'none',
+								} }
+								onChange={ ( value ) =>
+									setAttributes( { asideText: value } )
+								}
+								value={ asideText }
+								allowedFormats={ [] }
+								disableLineBreaks={ true }
+							/>
+						}
 					/>
 				</Section>
 			</div>
