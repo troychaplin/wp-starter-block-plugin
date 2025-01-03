@@ -12,7 +12,7 @@
     "html": false
   },
   "attributes": {
-    "title": {
+    "heading": {
       "type": "string"
     }
   }

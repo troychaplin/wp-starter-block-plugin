@@ -62,7 +62,7 @@ return array(
 			'html' => false
 		),
 		'attributes' => array(
-			'title' => array(
+			'heading' => array(
 				'type' => 'string'
 			)
 		)

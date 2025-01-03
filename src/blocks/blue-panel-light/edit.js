@@ -2,7 +2,7 @@ import { useBlockProps, InnerBlocks, PlainText } from '@wordpress/block-editor';
 import { Header } from '@troychaplin79/idc-frontend-ui';
 
 export default function Edit( { attributes, setAttributes } ) {
-	const { title } = attributes;
+	const { heading } = attributes;
 
 	return (
 		<div
@@ -17,7 +17,7 @@ export default function Edit( { attributes, setAttributes } ) {
 				weight="bold"
 				title={
 					<PlainText
-						placeholder="Add a title for this block"
+						placeholder="Add a heading for this block"
 						className="not-prose text-idc-blue-800 text-xl md:text-2xl lg:text-3xl lg:leading-[2.5rem] font-bold italic pb-4 last:pb-0"
 						style={ {
 							border: 'none',
@@ -26,9 +26,9 @@ export default function Edit( { attributes, setAttributes } ) {
 							resize: 'none',
 						} }
 						onChange={ ( value ) =>
-							setAttributes( { title: value } )
+							setAttributes( { heading: value } )
 						}
-						value={ title }
+						value={ heading }
 						allowedFormats={ [] }
 						disableLineBreaks={ true }
 					/>
