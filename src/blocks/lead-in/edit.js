@@ -28,7 +28,6 @@ export default function Edit( { attributes, setAttributes } ) {
 							setAttributes( { bgType: value } )
 						}
 						options={ [
-							{ label: 'None', value: 'none' },
 							{ label: 'White', value: 'white' },
 							{ label: 'Blue', value: 'blue' },
 							{ label: 'Gradient', value: 'gradient' },
