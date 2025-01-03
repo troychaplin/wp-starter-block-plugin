@@ -1,6 +1,10 @@
-import { useBlockProps, InspectorControls } from '@wordpress/block-editor';
+import {
+	useBlockProps,
+	InspectorControls,
+	InnerBlocks,
+} from '@wordpress/block-editor';
 import { PanelBody, RangeControl, SelectControl } from '@wordpress/components';
-import { BluePanel, Section } from '@troychaplin79/idc-frontend-ui';
+import { Section } from '@troychaplin79/idc-frontend-ui';
 
 export default function Edit( { attributes, setAttributes } ) {
 	const { maxWidth, bgType } = attributes;
@@ -44,14 +48,19 @@ export default function Edit( { attributes, setAttributes } ) {
 					maxWidth={ `${ maxWidth }xl` }
 					bgType={ bgType !== 'none' ? bgType : null }
 				>
-					<BluePanel cols={ 2 }>
-						<BluePanel.Content>
-							<p>Content goes here</p>
-						</BluePanel.Content>
-						<BluePanel.Content bgType="dark">
-							<p>Form goes here</p>
-						</BluePanel.Content>
-					</BluePanel>
+					<div className="mx-auto overflow-hidden rounded-xl bg-idc-blue-50">
+						<InnerBlocks
+							allowedBlocks={ [
+								'idc-block/blue-panel-light',
+								'idc-block/blue-panel-dark',
+							] }
+							template={ [
+								[ 'idc-block/blue-panel-light' ],
+								[ 'idc-block/blue-panel-dark' ],
+							] }
+							templateLock={ false }
+						/>
+					</div>
 				</Section>
 			</div>
 		</>
