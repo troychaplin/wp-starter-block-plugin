@@ -25,16 +25,23 @@ class EnqueueScripts
   public function enqueue_block_assets()
   {
     wp_enqueue_script(
-      'idc-block-editor-js',
-      plugin_dir_url(__FILE__) . '../build/scripts/idc-block-editor.js',
+      'block-editor-js',
+      plugin_dir_url(__FILE__) . '../build/scripts/block-editor.js',
       array('wp-blocks', 'wp-components', 'wp-data', 'wp-dom-ready', 'wp-edit-post', 'wp-element', 'wp-i18n', 'wp-plugins'),
       null,
       false
     );
 
     wp_enqueue_style(
-      'idc-blocks-styles',
+      'idc-block-ui',
       plugin_dir_url(__FILE__) . '../build/styles/idc-blocks.css',
+      [],
+      false
+    );
+
+    wp_enqueue_style(
+      'editor-styles',
+      plugin_dir_url(__FILE__) . '../build/styles/editor-styles.css',
       [],
       false
     );
