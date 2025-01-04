@@ -67,6 +67,72 @@ return array(
 			)
 		)
 	),
+	'hero-banner' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'idc-block/hero-banner',
+		'title' => 'Hero Banner',
+		'description' => 'Describe',
+		'category' => 'text',
+		'keywords' => array(
+			'form'
+		),
+		'render' => 'file:./render.php',
+		'supports' => array(
+			'html' => false
+		),
+		'attributes' => array(
+			'maxWidth' => array(
+				'type' => 'number',
+				'default' => 5
+			),
+			'bgType' => array(
+				'type' => 'string',
+				'default' => 'none'
+			)
+		)
+	),
+	'hero-banner-content' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'idc-block/hero-banner-content',
+		'title' => 'Hero Banner: Content',
+		'description' => 'An innerblock for blue panel with a light blue background.',
+		'category' => 'text',
+		'keywords' => array(
+			'form'
+		),
+		'parent' => array(
+			'idc-block/hero-banner'
+		),
+		'render' => 'file:./render.php',
+		'supports' => array(
+			'html' => false
+		),
+		'attributes' => array(
+			'heading' => array(
+				'type' => 'string'
+			)
+		)
+	),
+	'hero-banner-media' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'idc-block/hero-banner-media',
+		'title' => 'Hero Banner: Media',
+		'description' => 'An innerblock for blue panel with a light blue background.',
+		'category' => 'text',
+		'keywords' => array(
+			'form'
+		),
+		'parent' => array(
+			'idc-block/hero-banner'
+		),
+		'render' => 'file:./render.php',
+		'supports' => array(
+			'html' => false
+		)
+	),
 	'lead-in' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,

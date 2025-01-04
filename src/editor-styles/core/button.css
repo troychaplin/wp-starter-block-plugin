@@ -1,0 +1,13 @@
+/* Dark orange button hover style */
+.wp-block-button.is-style-dark-orange-button .wp-block-button__link:hover {
+	background-color: var(--wp--preset--color--light-orange);
+	color: var(--wp--preset--color--black);
+	border-color: var(--wp--preset--color--light-orange);
+}
+
+/* Light orange button hover style */
+.wp-block-button.is-style-light-orange-button .wp-block-button__link:hover {
+	background-color: var(--wp--preset--color--dark-orange);
+	color: var(--wp--preset--color--white);
+	border-color: var(--wp--preset--color--dark-orange);
+}

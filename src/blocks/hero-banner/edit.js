@@ -17,7 +17,7 @@ export default function Edit( { attributes, setAttributes } ) {
 						initialPosition={ maxWidth }
 						label="Max Width"
 						max={ 7 }
-						min={ 4 }
+						min={ 5 }
 						onChange={ ( value ) =>
 							setAttributes( { maxWidth: value } )
 						}
@@ -47,15 +47,15 @@ export default function Edit( { attributes, setAttributes } ) {
 					maxWidth={ `${ maxWidth }xl` }
 					bgType={ bgType !== 'none' ? bgType : null }
 				>
-					<div className="mx-auto overflow-hidden rounded-xl bg-idc-blue-50">
+					<div className="">
 						<InnerBlocks
 							allowedBlocks={ [
-								'idc-block/blue-panel-light',
-								'idc-block/blue-panel-dark',
+								'idc-block/hero-banner-content',
+								'idc-block/hero-banner-media',
 							] }
 							template={ [
-								[ 'idc-block/blue-panel-light' ],
-								[ 'idc-block/blue-panel-dark' ],
+								[ 'idc-block/hero-banner-content' ],
+								[ 'idc-block/hero-banner-media' ],
 							] }
 							templateLock={ false }
 						/>

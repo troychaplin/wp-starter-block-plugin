@@ -1,0 +1,25 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "idc-block/hero-banner",
+  "title": "Hero Banner",
+  "description": "Describe",
+  "category": "text",
+  "keywords": [
+    "form"
+  ],
+  "render": "file:./render.php",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "maxWidth": {
+      "type": "number",
+      "default": 5
+    },
+    "bgType": {
+      "type": "string",
+      "default": "none"
+    }
+  }
+}

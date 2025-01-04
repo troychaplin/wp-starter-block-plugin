@@ -3,7 +3,7 @@ module.exports = {
 		'postcss-import': {},
 		'postcss-prefix-selector': {
 			prefix: [ '.wp-block.idc-block' ],
-			includeFiles: [ 'idc-blocks.css' ],
+			includeFiles: [ 'idc-block-ui.css' ],
 		},
 		tailwindcss: {},
 		autoprefixer: {},
