@@ -1,0 +1,18 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "idc-block/hero-banner-media",
+  "title": "Hero Banner: Media",
+  "description": "An innerblock for blue panel with a light blue background.",
+  "category": "text",
+  "keywords": [
+    "form"
+  ],
+  "parent": [
+    "idc-block/hero-banner"
+  ],
+  "render": "file:./render.php",
+  "supports": {
+    "html": false
+  }
+}
