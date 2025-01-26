@@ -20,6 +20,7 @@ class AllowedBlocks
       'core/block',
       'core/button',
       'core/buttons',
+      'core/embed',
       'core/gallery',
       'core/heading',
       'core/image',

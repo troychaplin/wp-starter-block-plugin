@@ -1,0 +1,18 @@
+[
+	{
+		"path": "build/scripts/admin-scripts.js",
+		"limit": "100 kB"
+	},
+	{
+		"path": "build/scripts/block-editor.js",
+		"limit": "100 kB"
+	},
+	{
+		"path": "build/styles/editor-styles.css",
+		"limit": "50 kB"
+	},
+	{
+		"path": "build/styles/idc-blocks-ui.css",
+		"limit": "50 kB"
+	}
+]

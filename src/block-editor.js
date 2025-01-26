@@ -5,3 +5,8 @@ import './blocks/hero-banner';
 import './blocks/hero-banner-content';
 import './blocks/hero-banner-media';
 import './blocks/lead-in';
+
+// Helper Functins
+import './helpers/unregisterBlockStyles';
+import './helpers/unregisterBlockVariations';
+import './helpers/unregisterFormats';
