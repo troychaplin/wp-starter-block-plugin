@@ -6,4 +6,6 @@ import './blocks/hero-banner-content';
 import './blocks/hero-banner-media';
 import './blocks/lead-in';
 
+// Helper Functins
 import './helpers/unregister-formats';
+import './helpers/unregister-block-styles';
