@@ -24,7 +24,7 @@ require_once plugin_dir_path(__FILE__) . 'vendor/autoload.php';
 // Instantiate the classes
 $classes = [
     \IDC\AllowedBlocks::class,
-    \IDC\BlockCategories::class,
+    \IDC\BlockCustomizations::class,
     \IDC\CoreBlocks::class,
     \IDC\Customization::class,
     \IDC\EnqueueScripts::class,
