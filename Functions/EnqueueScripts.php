@@ -34,7 +34,7 @@ class EnqueueScripts
 
     wp_enqueue_style(
       'idc-block-ui',
-      plugin_dir_url(__FILE__) . '../build/styles/idc-blocks.css',
+      plugin_dir_url(__FILE__) . '../build/styles/idc-blocks-ui.css',
       [],
       false
     );
@@ -67,7 +67,7 @@ class EnqueueScripts
   {
     wp_enqueue_script(
       'idc-block-admin-js',
-      plugin_dir_url(__FILE__) . '../build/scripts/idc-block-admin.js',
+      plugin_dir_url(__FILE__) . '../build/scripts/admin-scripts.js',
       array(),
       null,
       true
