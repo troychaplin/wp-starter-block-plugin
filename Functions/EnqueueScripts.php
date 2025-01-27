@@ -11,7 +11,7 @@ class EnqueueScripts
   public function __construct()
   {
     add_action('enqueue_block_editor_assets', [$this, 'enqueue_block_assets']);
-    add_action('admin_enqueue_scripts', [$this, 'enqueue_admin_assets']);
+    // add_action('admin_enqueue_scripts', [$this, 'enqueue_admin_assets']);
   }
 
   /**

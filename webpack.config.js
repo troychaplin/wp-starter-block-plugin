@@ -5,6 +5,6 @@ module.exports = {
 	...defaultConfig,
 	entry: {
 		'block-editor': [ path.resolve( __dirname, 'src/block-editor.js' ) ],
-		'admin-scripts': [ path.resolve( __dirname, 'src/admin-scripts.js' ) ],
+		// 'admin-scripts': [ path.resolve( __dirname, 'src/admin-scripts.js' ) ],
 	},
 };

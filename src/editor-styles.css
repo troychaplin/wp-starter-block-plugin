@@ -1,5 +1,6 @@
 /* Global Styles */
 @import "./editor-styles/global/block-spacing.css";
+@import "./editor-styles/global/editor-widths.css";
 @import "./editor-styles/global/typography.css";
 
 /* Core Blocks */
@@ -9,3 +10,12 @@
 @import "./editor-styles/custom/blue-panel.css";
 @import "./editor-styles/custom/hero-banner.css";
 @import "./editor-styles/custom/lead-in.css";
+
+.editor-visual-editor__post-title-wrapper.edit-post-visual-editor__post-title-wrapper {
+	@apply hidden;
+}
+
+.block-editor-block-list__layout.is-root-container
+	> .idc-section--white:first-child {
+	@apply pt-16;
+}

@@ -7,7 +7,7 @@ export default function Edit( { attributes, setAttributes } ) {
 	return (
 		<div
 			{ ...useBlockProps( {
-				className: `ui-prose-first-last px-7 py-6 md:px-16 md:py-12 bg-idc-blue-50`,
+				className: `prose md:prose-lg ui-prose-first-last px-7 py-6 md:px-16 md:py-12 bg-idc-blue-50`,
 			} ) }
 		>
 			<Header

@@ -55,7 +55,7 @@ export default function Edit( { attributes, setAttributes, clientId } ) {
 
 			<div
 				{ ...useBlockProps( {
-					className: `idc-block idc-block-${ maxWidth }xl`,
+					className: `idc-block idc-block-${ maxWidth }xl idc-section--${ bgType }`,
 				} ) }
 			>
 				<Section

@@ -4,7 +4,7 @@ export default function Edit() {
 	return (
 		<div
 			{ ...useBlockProps( {
-				className: `ui-prose-first-last px-7 py-6 md:px-16 md:py-12 bg-idc-blue-600 text-white`,
+				className: `prose md:prose-lg ui-prose-first-last px-7 py-6 md:px-16 md:py-12 bg-idc-blue-600 text-white`,
 			} ) }
 		>
 			<InnerBlocks
