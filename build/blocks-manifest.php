@@ -131,16 +131,13 @@ return array(
 				'default' => 'none'
 			),
 			'topText' => array(
-				'type' => 'string',
-				'default' => 'Our Process'
+				'type' => 'string'
 			),
 			'bottomText' => array(
-				'type' => 'string',
-				'default' => 'As simple as A-B-C'
+				'type' => 'string'
 			),
 			'asideText' => array(
-				'type' => 'string',
-				'default' => 'We take the anxiety and uncertainty out of the document apostille process in these three simple steps!'
+				'type' => 'string'
 			)
 		)
 	)

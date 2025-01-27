@@ -58,12 +58,11 @@ export default function Edit( { attributes, setAttributes, clientId } ) {
 					className: `idc-block idc-block-${ maxWidth }xl`,
 				} ) }
 			>
-				<Section bgType={ bgType !== 'none' ? bgType : null }>
-					<Hero
-						bgType="none"
-						cols={ 2 }
-						maxWidth={ `${ maxWidth }xl` }
-					>
+				<Section
+					maxWidth={ `${ maxWidth }xl` }
+					bgType={ bgType !== 'none' ? bgType : null }
+				>
+					<Hero bgType="none" cols={ 2 }>
 						<Hero.Content
 							headerType="h1"
 							title={
