@@ -40,7 +40,7 @@ export default function Edit( { attributes, setAttributes } ) {
 
 			<div
 				{ ...useBlockProps( {
-					className: `idc-block idc-block-${ maxWidth }xl`,
+					className: `idc-block idc-block-${ maxWidth }xl idc-section--${ bgType }`,
 				} ) }
 			>
 				<Section

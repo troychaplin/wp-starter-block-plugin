@@ -1,9 +1,5 @@
 [
 	{
-		"path": "build/scripts/admin-scripts.js",
-		"limit": "100 kB"
-	},
-	{
 		"path": "build/scripts/block-editor.js",
 		"limit": "100 kB"
 	},

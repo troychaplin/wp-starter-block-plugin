@@ -1,0 +1,126 @@
+.ui-prose-first-last
+	> .block-editor-inner-blocks
+	> .block-editor-block-list__layout
+	> *:first-child {
+	@apply !mt-0;
+}
+
+.ui-prose-first-last
+	> .block-editor-inner-blocks
+	> .block-editor-block-list__layout
+	> *:last-child {
+	@apply !mb-0;
+}
+
+.block-editor-block-list__layout {
+	@apply px-8;
+}
+
+/* Add spacing between blocks */
+.wp-block.idc-block + .wp-block.idc-block,
+:not(.wp-block.idc-block) + .wp-block.idc-block,
+.wp-block.idc-block + :not(.wp-block.idc-block) {
+	@apply mt-8 md:mt-12;
+}
+
+/* White + White */
+/* .idc-section--white.wp-block.idc-block
+	+ .idc-section--white.wp-block.idc-block {
+	@apply mt-0 md:mt-0;
+} */
+
+/* White + White > Section */
+/* .idc-section--white.wp-block.idc-block
+	+ .idc-section--white.wp-block.idc-block
+	> .ui-section {
+	@apply pt-0;
+} */
+
+/* Blue + Blue */
+.idc-section--blue.wp-block.idc-block + .idc-section--blue.wp-block.idc-block {
+	@apply mt-0 md:mt-0;
+}
+
+/* Blue + Blue > Section */
+.idc-section--blue.wp-block.idc-block
+	+ .idc-section--blue.wp-block.idc-block
+	> .ui-section {
+	@apply pt-0;
+}
+
+/* Gradient + Gradient */
+/* .idc-section--gradient.wp-block.idc-block
+	+ .idc-section--gradient.wp-block.idc-block {
+	@apply mt-0 md:mt-0;
+} */
+
+/* Gradient + Gradient > Section */
+/* .idc-section--gradient.wp-block.idc-block
+	+ .idc-section--gradient.wp-block.idc-block
+	> .ui-section {
+	@apply pt-0;
+} */
+
+/* Gradient + Blue */
+.idc-section--gradient.wp-block.idc-block
+	+ .idc-section--blue.wp-block.idc-block {
+	@apply mt-0 md:mt-0;
+}
+
+/* Gradient + Blue > Section */
+.idc-section--gradient.wp-block.idc-block
+	+ .idc-section--blue.wp-block.idc-block
+	> .ui-section {
+	@apply pt-0;
+}
+
+/* Edge + Blue */
+.idc-section--edge.wp-block.idc-block + .idc-section--blue.wp-block.idc-block {
+	@apply mt-0 md:mt-0;
+}
+
+/* Edge + Blue > Section */
+.idc-section--edge.wp-block.idc-block
+	+ .idc-section--blue.wp-block.idc-block
+	> .ui-section {
+	@apply pt-0;
+}
+
+/* Blue + Edge > Section */
+/* .idc-section--blue.wp-block.idc-block
+	+ .idc-section--edge.wp-block.idc-block
+	> .ui-section {
+	@apply pt-6;
+} */
+
+/*  */
+/*  */
+/*  */
+
+/* White + Edge > Section */
+.idc-section--white.wp-block.idc-block
+	+ .idc-section--edge.wp-block.idc-block
+	> .ui-section {
+	@apply pt-0;
+}
+
+/* Blue + Edge > Section */
+.idc-section--blue.wp-block.idc-block
+	+ .idc-section--edge.wp-block.idc-block
+	> .ui-section {
+	@apply pt-0;
+}
+
+/* Gradient + Edge > Section */
+.idc-section--gradient.wp-block.idc-block
+	+ .idc-section--edge.wp-block.idc-block
+	> .ui-section {
+	@apply pt-0;
+}
+
+/* Edge + Edge > Section */
+.idc-section--edge.wp-block.idc-block
+	+ .idc-section--edge.wp-block.idc-block
+	> .ui-section {
+	@apply pt-0;
+}
