@@ -6,7 +6,9 @@
   "description": "Describe",
   "category": "text",
   "keywords": [
-    "form"
+    "hero",
+    "banner",
+    "heading"
   ],
   "render": "file:./render.php",
   "supports": {
@@ -15,11 +17,19 @@
   "attributes": {
     "maxWidth": {
       "type": "number",
-      "default": 5
+      "default": 7
     },
     "bgType": {
       "type": "string",
-      "default": "none"
+      "default": "gradient"
+    },
+    "blockHeader": {
+      "type": "string",
+      "default": ""
+    },
+    "isFirstBlock": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

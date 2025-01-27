@@ -27,6 +27,7 @@ $classes = [
     \IDC\BlockCustomizations::class,
     \IDC\CoreBlocks::class,
     \IDC\Customization::class,
+    \IDC\EditorBanners::class,
     \IDC\EnqueueScripts::class,
     \IDC\RegisterBlocks::class,
     \IDC\RemoveOptions::class,
