@@ -1,12 +1,12 @@
-.wp-block.wp-block-idc-block-hero-banner .block-editor-block-list__layout {
+.wp-block.idc-block.wp-block-idc-block-hero-banner h1 {
+	@apply pb-0;
+}
+
+.wp-block.idc-block.wp-block-idc-block-hero-banner
+	.block-editor-block-list__layout {
 	@apply px-0;
 }
 
-.wp-block.wp-block-idc-block-hero-banner
-	> section
-	> div
-	> div
-	> .block-editor-inner-blocks
-	> .block-editor-block-list__layout {
-	@apply grid gap-6 md:grid-cols-2;
+.hero-media-temp {
+	@apply block w-full h-full rounded-lg bg-white/50;
 }

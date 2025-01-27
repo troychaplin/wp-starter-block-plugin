@@ -50,7 +50,7 @@ export default function Edit( { attributes, setAttributes } ) {
 					<LeadIn
 						headerTop={
 							<PlainText
-								placeholder="Add a top title"
+								placeholder="Small text intro"
 								className="block text-base italic not-prose md:text-lg text-idc-black-500"
 								style={ {
 									border: 'none',
@@ -68,7 +68,7 @@ export default function Edit( { attributes, setAttributes } ) {
 						}
 						headerBottom={
 							<PlainText
-								placeholder="Add a bottom title"
+								placeholder="Large text intro"
 								className="block text-2xl italic font-medium not-prose md:text-3xl text-idc-orange-600"
 								style={ {
 									border: 'none',
@@ -86,7 +86,7 @@ export default function Edit( { attributes, setAttributes } ) {
 						}
 						text={
 							<PlainText
-								placeholder="Add some descriptive text"
+								placeholder="Add more description but try and keep this one to two lines if possible."
 								className="text-base md:text-lg"
 								style={ {
 									border: 'none',

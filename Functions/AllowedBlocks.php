@@ -37,8 +37,6 @@ class AllowedBlocks
       'idc-block/blue-panel-dark',
       'idc-block/blue-panel-light',
       'idc-block/hero-banner',
-      'idc-block/hero-banner-content',
-      'idc-block/hero-banner-media',
       'idc-block/lead-in',
     ];
 

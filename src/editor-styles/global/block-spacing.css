@@ -3,6 +3,7 @@
 }
 
 /* Add spacing between core and custom blocks */
+.wp-block.idc-block + .wp-block.idc-block,
 :not(.wp-block.idc-block) + .wp-block.idc-block,
 .wp-block.idc-block + :not(.wp-block.idc-block) {
 	@apply mt-6 md:mt-10;
