@@ -41,12 +41,20 @@ $core_classes = [
     \IDC\Core\RemoveOptions::class,
 ];
 
+$endpoint_classes = [
+    \IDC\EndPoints\FAQs::class,
+    \IDC\EndPoints\Pages::class,
+    \IDC\EndPoints\Posts::class,
+    \IDC\EndPoints\Testimonials::class,
+];
+
 $type_classes = [
     \IDC\Types\FAQ::class,
+    \IDC\Types\Pages::class,
     \IDC\Types\Testimonials::class,
 ];
 
-$classes = array_merge($global_classes, $block_classes, $core_classes, $type_classes);
+$classes = array_merge($global_classes, $block_classes, $core_classes, $endpoint_classes, $type_classes);
 
 foreach ($classes as $class) {
     new $class();
