@@ -29,6 +29,8 @@ $classes = [
     \IDC\Customization::class,
     \IDC\EditorBanners::class,
     \IDC\EnqueueScripts::class,
+    \IDC\TypeFAQ::class,
+    \IDC\TypeTestimonials::class,
     \IDC\RegisterBlocks::class,
     \IDC\RemoveOptions::class,
 ];

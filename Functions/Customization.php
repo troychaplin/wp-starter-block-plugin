@@ -13,6 +13,8 @@ class Customization
     add_filter('xmlrpc_enabled', '__return_false');
     add_filter('register_block_type_args', [$this, 'set_allowed_heading_levels'], 10, 2);
     add_action('init', [$this, 'add_page_excerpts']);
+    add_filter('menu_order', [$this, 'reorder_admin_menu'], 10, 1);
+    add_filter('custom_menu_order', '__return_true');
     add_action('init', [$this, 'clean_up_wp_head']);
     add_action('init', [$this, 'disable_emojis']);
   }
@@ -46,6 +48,26 @@ class Customization
   public function add_page_excerpts()
   {
     add_post_type_support('page', 'excerpt');
+  }
+
+  /**
+   * Reorders the items in the WordPress admin menu.
+   *
+   * This function customizes the order of the items in the WordPress admin menu.
+   * It returns an array of menu slugs in the desired order.
+   *
+   * @param array $menu_ord The current order of the admin menu items.
+   * @return array The reordered admin menu items.
+   */
+  public function reorder_admin_menu($menu_ord)
+  {
+    return [
+      'index.php',
+      'edit.php?post_type=page',
+      'edit.php',
+      'edit.php?post_type=idc_faq',
+      'edit.php?post_type=idc_testimonial',
+    ];
   }
 
   /**
