@@ -1,12 +1,12 @@
 <?php
 
-namespace IDC;
+namespace IDC\Types;
 
 if (! defined('ABSPATH')) {
   exit; // Exit if accessed directly.
 }
 
-class TypeFAQ
+class FAQ
 {
   public function __construct()
   {

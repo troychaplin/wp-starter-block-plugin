@@ -1,6 +1,8 @@
 <?php
 
-namespace IDC;
+namespace IDC\Core;
+
+use IDC\Globals\PluginPaths;
 
 if (! defined('ABSPATH')) {
   exit; // Exit if accessed directly.
@@ -24,9 +26,11 @@ class EnqueueScripts
    */
   public function enqueue_block_assets()
   {
+    $asset_path = PluginPaths::pluginUrl() . 'build/';
+
     wp_enqueue_script(
       'block-editor-js',
-      plugin_dir_url(__FILE__) . '../build/scripts/block-editor.js',
+      $asset_path . 'scripts/block-editor.js',
       array('wp-blocks', 'wp-components', 'wp-data', 'wp-dom-ready', 'wp-edit-post', 'wp-element', 'wp-i18n', 'wp-plugins'),
       null,
       false
@@ -34,14 +38,14 @@ class EnqueueScripts
 
     wp_enqueue_style(
       'idc-block-ui',
-      plugin_dir_url(__FILE__) . '../build/styles/idc-blocks-ui.css',
+      $asset_path . 'styles/idc-blocks-ui.css',
       [],
       false
     );
 
     wp_enqueue_style(
       'editor-styles',
-      plugin_dir_url(__FILE__) . '../build/styles/editor-styles.css',
+      $asset_path . 'styles/editor-styles.css',
       [],
       false
     );
@@ -65,9 +69,11 @@ class EnqueueScripts
    */
   public function enqueue_admin_assets()
   {
+    $asset_path = PluginPaths::pluginUrl() . 'build/';
+
     wp_enqueue_script(
       'idc-block-admin-js',
-      plugin_dir_url(__FILE__) . '../build/scripts/admin-scripts.js',
+      $asset_path . 'scripts/admin-scripts.js',
       array(),
       null,
       true
