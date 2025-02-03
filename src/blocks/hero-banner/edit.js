@@ -80,8 +80,8 @@ export default function Edit( { attributes, setAttributes, clientId } ) {
 										setAttributes( { blockHeader: value } )
 									}
 									value={ blockHeader }
-									allowedFormats={ [] }
-									disableLineBreaks={ true }
+									// allowedFormats={[]}
+									// disableLineBreaks={true}
 								/>
 							}
 						>

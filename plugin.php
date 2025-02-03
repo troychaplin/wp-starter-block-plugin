@@ -22,16 +22,39 @@ if (! defined('ABSPATH')) {
 require_once plugin_dir_path(__FILE__) . 'vendor/autoload.php';
 
 // Instantiate the classes
-$classes = [
-    \IDC\AllowedBlocks::class,
-    \IDC\BlockCustomizations::class,
-    \IDC\CoreBlocks::class,
-    \IDC\Customization::class,
-    \IDC\EditorBanners::class,
-    \IDC\EnqueueScripts::class,
-    \IDC\RegisterBlocks::class,
-    \IDC\RemoveOptions::class,
+
+$global_classes = [
+    \IDC\Globals\PluginPaths::class,
 ];
+
+$block_classes = [
+    \IDC\Blocks\AllowedBlocks::class,
+    \IDC\Blocks\CoreBlocks::class,
+    \IDC\Blocks\Customizations::class,
+    \IDC\Blocks\RegisterBlocks::class,
+];
+
+$core_classes = [
+    \IDC\Core\Customization::class,
+    \IDC\Core\EditorBanners::class,
+    \IDC\Core\EnqueueScripts::class,
+    \IDC\Core\RemoveOptions::class,
+];
+
+$endpoint_classes = [
+    \IDC\EndPoints\FAQs::class,
+    \IDC\EndPoints\Pages::class,
+    \IDC\EndPoints\Posts::class,
+    \IDC\EndPoints\Testimonials::class,
+];
+
+$type_classes = [
+    \IDC\Types\FAQ::class,
+    \IDC\Types\Pages::class,
+    \IDC\Types\Testimonials::class,
+];
+
+$classes = array_merge($global_classes, $block_classes, $core_classes, $endpoint_classes, $type_classes);
 
 foreach ($classes as $class) {
     new $class();

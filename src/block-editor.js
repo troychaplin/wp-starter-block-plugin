@@ -1,3 +1,4 @@
+import './blocks/article-cards';
 import './blocks/blue-panel';
 import './blocks/blue-panel-dark';
 import './blocks/blue-panel-light';

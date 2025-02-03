@@ -1,6 +1,6 @@
 <?php
 
-namespace IDC;
+namespace IDC\Core;
 
 if (! defined('ABSPATH')) {
   exit; // Exit if accessed directly.

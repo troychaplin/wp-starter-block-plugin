@@ -1,6 +1,99 @@
 <?php
 // This file is generated. Do not modify it manually.
 return array(
+	'article-cards' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'idc-block/article-cards',
+		'title' => 'Article Cards',
+		'description' => 'A block that highlights important information.',
+		'category' => 'text',
+		'keywords' => array(
+			'articles',
+			'cards',
+			'news',
+			'posts'
+		),
+		'render' => 'file:./render.php',
+		'supports' => array(
+			'html' => false
+		),
+		'attributes' => array(
+			'maxWidth' => array(
+				'type' => 'number',
+				'default' => 5
+			),
+			'bgType' => array(
+				'type' => 'string',
+				'default' => 'none'
+			),
+			'addIntro' => array(
+				'type' => 'boolean',
+				'default' => false
+			),
+			'blockHeader' => array(
+				'type' => 'string',
+				'default' => null
+			),
+			'blockIntro' => array(
+				'type' => 'string',
+				'default' => null
+			),
+			'numberOfColumns' => array(
+				'type' => 'number',
+				'default' => 3
+			),
+			'showImages' => array(
+				'type' => 'boolean',
+				'default' => true
+			),
+			'showDates' => array(
+				'type' => 'boolean',
+				'default' => true
+			),
+			'showExcerpts' => array(
+				'type' => 'boolean',
+				'default' => true
+			),
+			'numberOfPosts' => array(
+				'type' => 'number',
+				'default' => 6
+			),
+			'moreButton' => array(
+				'type' => 'string',
+				'default' => 'none'
+			),
+			'pageLink' => array(
+				'type' => 'string'
+			),
+			'contentType' => array(
+				'type' => 'string',
+				'default' => 'post'
+			),
+			'order' => array(
+				'type' => 'string',
+				'default' => 'desc'
+			),
+			'orderBy' => array(
+				'type' => 'string',
+				'default' => 'date'
+			),
+			'terms' => array(
+				'type' => 'array',
+				'items' => array(
+					'type' => 'object'
+				)
+			),
+			'taxName' => array(
+				'type' => 'string',
+				'default' => 'category'
+			),
+			'currentPage' => array(
+				'type' => 'number',
+				'default' => 1
+			)
+		)
+	),
 	'blue-panel' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,

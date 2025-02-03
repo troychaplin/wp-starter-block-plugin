@@ -1,6 +1,6 @@
 <?php
 
-namespace IDC;
+namespace IDC\Blocks;
 
 if (! defined('ABSPATH')) {
   exit; // Exit if accessed directly.
@@ -33,6 +33,7 @@ class AllowedBlocks
 
     // Allowed custom blocks
     $custom_blocks = [
+      'idc-block/article-cards',
       'idc-block/blue-panel',
       'idc-block/blue-panel-dark',
       'idc-block/blue-panel-light',
