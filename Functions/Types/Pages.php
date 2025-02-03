@@ -69,7 +69,7 @@ class Pages
   {
     $post_type_object = get_post_type_object('page');
     $post_type_object->template = [
-      ['cu-block/hero-banner']
+      ['idc-block/hero-banner']
     ];
   }
 }

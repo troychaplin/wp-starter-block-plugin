@@ -62,8 +62,8 @@ export default function Edit( { attributes, setAttributes } ) {
 									setAttributes( { topText: value } )
 								}
 								value={ topText }
-								allowedFormats={ [] }
-								disableLineBreaks={ true }
+								// allowedFormats={ [] }
+								// disableLineBreaks={true}
 							/>
 						}
 						headerBottom={
@@ -80,8 +80,8 @@ export default function Edit( { attributes, setAttributes } ) {
 									setAttributes( { bottomText: value } )
 								}
 								value={ bottomText }
-								allowedFormats={ [] }
-								disableLineBreaks={ true }
+								// allowedFormats={ [] }
+								// disableLineBreaks={true}
 							/>
 						}
 						text={
@@ -98,8 +98,8 @@ export default function Edit( { attributes, setAttributes } ) {
 									setAttributes( { asideText: value } )
 								}
 								value={ asideText }
-								allowedFormats={ [] }
-								disableLineBreaks={ true }
+								// allowedFormats={ [] }
+								// disableLineBreaks={true}
 							/>
 						}
 					/>
