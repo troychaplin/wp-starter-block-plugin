@@ -155,7 +155,7 @@ return array(
 			'html' => false
 		),
 		'attributes' => array(
-			'heading' => array(
+			'blockHeader' => array(
 				'type' => 'string'
 			)
 		)

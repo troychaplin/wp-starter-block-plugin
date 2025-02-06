@@ -16,7 +16,7 @@
     "html": false
   },
   "attributes": {
-    "heading": {
+    "blockHeader": {
       "type": "string"
     }
   }

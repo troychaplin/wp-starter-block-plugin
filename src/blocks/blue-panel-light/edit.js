@@ -2,7 +2,7 @@ import { useBlockProps, InnerBlocks, PlainText } from '@wordpress/block-editor';
 import { Header } from '@troychaplin79/idc-frontend-ui';
 
 export default function Edit( { attributes, setAttributes } ) {
-	const { heading } = attributes;
+	const { blockHeader } = attributes;
 
 	return (
 		<div
@@ -26,9 +26,9 @@ export default function Edit( { attributes, setAttributes } ) {
 							resize: 'none',
 						} }
 						onChange={ ( value ) =>
-							setAttributes( { heading: value } )
+							setAttributes( { blockHeader: value } )
 						}
-						value={ heading }
+						value={ blockHeader }
 						allowedFormats={ [] }
 						disableLineBreaks={ true }
 					/>
