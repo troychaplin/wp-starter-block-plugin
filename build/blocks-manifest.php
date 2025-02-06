@@ -23,10 +23,6 @@ return array(
 				'type' => 'number',
 				'default' => 5
 			),
-			'bgType' => array(
-				'type' => 'string',
-				'default' => 'none'
-			),
 			'addIntro' => array(
 				'type' => 'boolean',
 				'default' => false

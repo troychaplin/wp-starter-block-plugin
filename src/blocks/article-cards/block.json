@@ -15,10 +15,6 @@
 			"type": "number",
 			"default": 5
 		},
-		"bgType": {
-			"type": "string",
-			"default": "none"
-		},
 		"addIntro": {
 			"type": "boolean",
 			"default": false
